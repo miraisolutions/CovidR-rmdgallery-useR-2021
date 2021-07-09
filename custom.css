@@ -1,0 +1,192 @@
+/*#008cc3 mirai blue*/
+/* bg img https://github.com/miraisolutions/miraisolutions.github.io/blob/master/assets/images/illu-header-data.png */
+
+/* Font */
+body, h1, h2, h3 {
+  /*
+  Note: the Mirai website (Frutiger) is not availaible
+  We specify Arial first, which makes the displayed font on Firefox closer to
+  what Chrome displays
+  (Chrome was the brower used in preparation for and thuring the workshop)
+  */
+  font-family: Arial,Helvetica,sans-serif !important;
+}
+
+body {
+  /*
+  Firefox seems to have a wider default for this font, so we explicitly set it
+  to 1.16, which is what Chrome seems to use as default
+  (Chrome was the brower used in preparation for and during the workshop)
+  https://stackoverflow.com/questions/31386307/css-line-height-not-the-same-in-firefox-and-chrome
+  */
+  line-height: 1.16;
+}
+
+h1, h2, h3 {
+  color: #008cc3 !important;
+}
+
+.remark-slide-content>h2 {
+  margin-top: 15px;
+
+}
+
+/*links*/
+a {
+  color: #008cc3 !important;
+}
+
+/* Footer */
+div.my-footer {
+    background-color: #F8F8F8; /* light gray */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./img/mirai-solutions-logo-flyer.png");
+    background-size: 80px; /*fixed width proportional heigth */
+    background-position: 98%;
+}
+div.my-footer span {
+    font-size: 10pt;
+    color: #808080; /* gray */
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+}
+
+.remark-slide-number {
+  font-size: 10pt;
+  bottom: 7px;
+  right: 50%;
+  color: #808080; /* gray */
+  opacity: 1; /* default: 0.5 */
+}
+
+/*Mirai styled inverse slide*/
+.inverse {
+  background-color: #008cc3;
+}
+
+/*Mirai styled first slide*/
+.title-slide {
+  background-image: url('./img/illu-header-data.png');
+  background-size: cover;
+}
+
+.title-slide h1, .title-slide h2, .title-slide h3 {
+  color: #f3f3f3 !important; /*xaringan default*/
+}
+
+.title-slide a {
+  color: #f3f3f3 !important; /*xaringan default*/
+  text-decoration: underline;
+}}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3 !important; /*xaringan default*/
+}
+
+.inverse .remark-slide-number {
+  display: none;
+}
+
+.inverse div.my-footer span {display:none;}
+.inverse div.my-footer {display:none;}
+
+/*Mirai styled slide with logo top-right - new class */
+.logo-slide {
+    background-image: url('./img/mirai-solutions-logo-flyer.png');
+    background-size: 300px; /*fixed width proportional heigth */
+    background-position: 85% 5%
+}
+
+
+/*Mirai styled slide with smaller logo top-right - new class */
+.logo-slide-small {
+    background-image: url('./img/mirai-solutions-logo-flyer.png');
+    background-size: 150px; /*fixed width proportional heigth */
+    background-position: 90% 5%
+}
+
+/*big bullets */
+ul {
+  list-style-type: disc;
+  margin-left:30px !important;
+  padding: 0px !important;
+}
+/*More spaces between bullets */
+ol li, ul li {
+margin-bottom: 0.5em !important;
+}
+
+
+/* Reduce fig caption size */
+p.caption {
+  font-size: 0.5em;
+}
+
+/*Center text */
+.pull-middle {
+  text-align: center;
+}
+
+/*reduce font size*/
+.fontsize80 {
+  font-size: 0.8em;
+}
+
+
+/* Inverse Two-column layout */
+.inverse-left-column {
+  width: 80%;
+  float: left;
+}
+
+.inverse-right-column {
+  width: 20%;
+  float: right;
+}
+
+.right-column-75 {
+  width: 75%;
+  float: right;
+}
+
+.left-column-50 {
+  width: 50%;
+  float: left;
+}
+
+.right-column-50 {
+  width: 50%;
+  float: right;
+}
+
+.no-first-top-margin :first-child {
+  margin-top: 0;
+}
+
+/* Inverse 60/40 Two-column layout */
+.inverse-60-40-left-column {
+  width: 60%;
+  float: left;
+}
+
+.inverse-60-40-right-column {
+  width: 40%;
+  float: right;
+}
+
+.img-covidr-website {
+  max-width: 100%;
+  height: 550px;
+  position: absolute;
+  top: 100px;
+}

@@ -1,10 +1,12 @@
 # useR! 2021: CovidR and `{rmdgallery}`
 
-CovidR and rmdgallery: A streamlined process for collecting community contributions in a gallery website
+## A streamlined process for collecting community contributions in a gallery website
 
 Riccardo Porreca, Francesca Vitalini, [Mirai Solutions GmbH](https://mirai-solutions.ch)
 
 Regular talk at [useR! 2021](https://user2021.r-project.org/)
+
+Slides: [mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides](https://mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides)
 
 
 ## Abstract
