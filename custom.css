@@ -80,6 +80,11 @@ div.my-footer span {
   color: #f3f3f3 !important; /*xaringan default*/
 }
 
+.title-slide a {
+  color: #f3f3f3 !important; /*xaringan default*/
+  text-decoration: underline;
+}}
+
 .title-slide .remark-slide-number {
   display: none;
 }

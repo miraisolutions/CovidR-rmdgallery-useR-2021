@@ -4,8 +4,8 @@ subtitle: "A streamlined process for collecting community contributions in a gal
 author: |
   Riccardo Porreca<br/>Francesca Vitalini
 date: |
-  useR! 2021<br/>
-  2021-07-09
+  useR! 2021 &ndash; 2021-07-09<br/>
+  .fontsize80[[mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides](https://mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides)]
   <img src="img/mirai_logo_inverted_manual.png" style="width: 450px; position: fixed; bottom: 0; right:0">
 output:
   xaringan::moon_reader:
@@ -137,9 +137,10 @@ Contribution details [submitted as a YAML metadata file](https://milano-r.github
   - **R markdown** website (GitHub Pages)
   - YAML → Gallery page:<br/>
     new package **`{rmdgallery}`**
-  - **Badges**, **_Likes_**
-  - Highly-**automated**:<br/>
-    CI/CD via **GitHub Actions** (& more)
+
+- **Badges**, **_Likes_**
+- Highly-**automated**:<br/>
+  CI/CD (& more) via **GitHub Actions**
 
 ]
 
@@ -155,8 +156,8 @@ Contribution details [submitted as a YAML metadata file](https://milano-r.github
   - Renders a [_simple_ R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) via `rmarkdown::render_site()`
   - Including a gallery of pages generated from YAML / JSON metadata
 
-- Beyond CovidR, custom [gallery of online resources](https://mirai-solutions.ch/news/2020/03/27/covid-19-resource-gallery/)
 - Companion example repo / website [<span class="fa fa-github"></span> riccardoporreca / rmd-gallery-example](https://github.com/riccardoporreca/rmd-gallery-example#readme)
+- Beyond CovidR, custom [gallery of online resources](https://mirai-solutions.ch/news/2020/03/27/covid-19-resource-gallery/)
 
 --
 
@@ -213,7 +214,7 @@ Individual metadata files .fontsize80[(`single_meta: true`)]
 --
 
 .pull-right.no-first-top-margin[
-Metadata collection files.fontsize80[(`single_meta: false`)]
+Metadata collection files .fontsize80[(`single_meta: false`)]
 ```yml
  # meta/*.yml
  `html-example`:
@@ -338,8 +339,6 @@ knitr::include_graphics("img/CovidR-gallery-page-rmdgallery-elements.png")
 - [`rmdgallery::gallery_site_config()`](https://riccardoporreca.github.io/rmdgallery/reference/gallery_site_config.html)<br/>
   Configuration `list` (from `_site.yml`), **including parsed metadata** as `$gallery$meta`
 - The parsed metadata can be used to **create arbitrary content** in any standard `.Rmd` website page
---
-
 - Example: R code chunk creating an index / ToC for the gallery pages via [`{htmltools}`](https://rstudio.github.io/htmltools)<br>
   [<span class="fa fa-github"></span> `rmd-gallery-example/index.Rmd#L12-L26`](https://github.com/riccardoporreca/rmd-gallery-example/blob/1fdd41060b52a246a7c51d20c7bdbc00a49b521a/index.Rmd#L12-L26)
   ```r
@@ -453,7 +452,6 @@ Just export a endpoint function and your notebook automatically becomes an HTTPS
 </div>
 
 
-
 ---
 
 ## CovidR: Community _Likes_ <span class="fa fa-thumbs-up"><span>
@@ -502,12 +500,11 @@ Just export a endpoint function and your notebook automatically becomes an HTTPS
 
 </div>
 
-
 .pull-left[
 
 **Streamlined collaborative process**
 
-- Pull Requests / GitHub Issues
+- GitHub Pull Requests / Issues
 
 - GitHub [_Community profile_](https://github.com/Milano-R/erum2020-covidr-contest/community)
 
@@ -523,7 +520,6 @@ Just export a endpoint function and your notebook automatically becomes an HTTPS
   - [`README.Rmd`]() + [`.git/hooks/pre-commit`]()
   - [`contest/about.Rmd`]()
   - [`contest/submit.Rmd`]()
-
 
 ]
 
@@ -676,26 +672,26 @@ Contest evolution updates live in a [**matter of a Pull Request**](https://githu
 
 ## Wrap-up
 
-- **Open-source** contest of open-source **Community Contrbutions**
-- Centered around **GitHub**, mix and match open-source **tools and services**
-- Best development practices: Help my **"future self"** one year down the road
+- **Open-source** contest of open-source **Community Contributions**
+- Centered around **GitHub**, mix and match open-source **code** / **tools** / **services**, new package [`{rmdgallery}`](https://riccardoporreca.github.io/rmdgallery)
+- Best development practices: Help my **"future self"** (and the Community) one year down the road
 
-**Slides at [mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides.html](http://mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides.html)**<br/>
-→ Links and pointers for those interested in the details
+**Slides at [mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides](https://mirai-solutions.ch/CovidR-rmdgallery-useR-2021/slides)**<br/>
+→ Links and pointers to explore for details
 
 --
 
 #### Want _Moar_?
 
-- [e-Rum2020 workshop - GitHub, CI/CD, GitFlow, ...](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)
-- [useR! 2021 Elevator Pitch](https://user2021.r-project.org/participation/technical_notes/t236/technote/) - Continuously expanding [mirai-solutions.ch/techguides](https://mirai-solutions.ch/techguides)
-- New workshop series: [mirai-solutions.ch/services/workshops/](https://mirai-solutions.ch/services/workshops/)
+- CovidR [<span class="fa fa-youtube"></span> Submission 101](https://youtu.be/pqrcxRL7AtU) | [<span class="fa fa-youtube"></span> Pre-conference event](https://youtu.be/08LCM4KQC9Y)
+- [e-Rum2020 workshop](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/) &ndash; GitHub, CI/CD, GitFlow, ...
+- [<span class = "fa fa-github"></span> Milano-R / erum2020program](https://github.com/Milano-R/erum2020program#readme) &ndash;  Collaborative conference materials collection
 
 #### Get in touch
 
 - [riccardo.porreca@mirai-solutions.com](mailto:riccardo.porreca@mirai-solutions.com)
-- [mirai-solutions.ch](https://mirai-solutions.ch) &ndash; [info@mirai-solutions.com](mailto:info@mirai-solutions.com)
-- [<span class = "fa fa-linkedin"></span> @mirai-solutions-gmbh](https://www.linkedin.com/company/mirai-solutions-gmbh/) [<span class = "fa fa-twitter"></span> @miraisolutions](https://twitter.com/miraisolutions)
+- [mirai-solutions.ch](https://mirai-solutions.ch) | [info@mirai-solutions.com](mailto:info@mirai-solutions.com)
+- [<span class = "fa fa-linkedin"></span> @mirai-solutions-gmbh](https://www.linkedin.com/company/mirai-solutions-gmbh/) | [<span class = "fa fa-twitter"></span> @miraisolutions](https://twitter.com/miraisolutions)
 
 ```{r eval = TRUE, echo = FALSE, out.width = "40%", out.extra='style="position:absolute;bottom:80px;right:50px;"'}
 knitr::include_graphics("./img/mirai-solutions-logo-flyer.png")
