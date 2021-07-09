@@ -182,6 +182,6 @@ p.caption {
 .img-covidr-website {
   max-width: 100%;
   height: 550px;
-  margin-top: -30px;
-  position: fixed;
+  position: absolute;
+  top: 100px;
 }

@@ -30,9 +30,10 @@ layout: true
 
 <div class="my-footer"><span>Copyright (c) 2021</span></div>
 
+
 ---
 
-## Motivation &ndash; e-Rum2020::CovidR 
+## Introduction &ndash; e-Rum2020::CovidR
 
 .pull-left[
 
@@ -52,18 +53,18 @@ layout: true
 
 --
 
-#### Engage the R community around the topic of the COVID-19 pandemic
+#### Engage the R Community around the topic of the COVID-19 pandemic
 
 - **CovidR**: Contest of open-source contributions (Apr 17 - May 22 2020)
 
   - Built around an **open-source** repository [<span class="fa fa-github"></span> Milano-R / erum2020-covidr-contest](https://github.com/Milano-R/erum2020-covidr-contest)
-  - **Gallery website** collecting and showcasing contributions: [milano-r.github.io/erum2020-covidr-contest](https://milano-r.github.io/erum2020-covidr-contest)
-  - **Pre-conference event** (May 29 2020)
+  - Collect / showcase contributions: **R markdown gallery website** [milano-r.github.io/erum2020-covidr-contest](https://milano-r.github.io/erum2020-covidr-contest)
+  - **Pre-conference event** (May 29 2020) [<span class="fa fa-youtube"></span>](https://youtu.be/08LCM4KQC9Y)
 
 
 ---
 
-## Motivation &ndash; e-Rum2020::CovidR 
+## Introduction &ndash; e-Rum2020::CovidR
 
 <a href="https://milano-r.github.io/erum2020-covidr-contest">
 ```{r eval=TRUE, echo=FALSE, fig.alt='List of contributions in the CovidR home page', out.extra='class="img-covidr-website"'}
@@ -71,9 +72,10 @@ knitr::include_graphics("img/CovidR-home-contributions.png")
 ```
 </a>
 
+
 ---
 
-## Motivation &ndash; e-Rum2020::CovidR 
+## Introduction &ndash; e-Rum2020::CovidR
 
 <a href="https://milano-r.github.io/erum2020-covidr-contest">
 ```{r eval=TRUE, echo=FALSE, fig.alt='The CovidR contributions gallery menu', out.extra='class="img-covidr-website"'}
@@ -81,9 +83,10 @@ knitr::include_graphics("img/CovidR-home-contributions-menu.png")
 ```
 </a>
 
+
 ---
 
-## Motivation &ndash; e-Rum2020::CovidR 
+## Introduction &ndash; e-Rum2020::CovidR
 
 <a href="https://milano-r.github.io/erum2020-covidr-contest/covid19datahub">
 ```{r eval=TRUE, echo=FALSE, fig.alt='An example of CovidR contribution gallery page', out.extra='class="img-covidr-website"'}
@@ -91,9 +94,10 @@ knitr::include_graphics("img/CovidR-gallery-page.png")
 ```
 </a>
 
+
 ---
 
-## Contributions: Relevant information
+## CovidR: Contribution Information
 
 <a href="https://milano-r.github.io/erum2020-covidr-contest/covid19datahub">
 ```{r eval=TRUE, echo=FALSE, fig.alt='An example of CovidR contribution gallery page, with highlighted elements for the contribution\'s title, authors, repository, abstract', out.extra='class="img-covidr-website"'}
@@ -101,10 +105,10 @@ knitr::include_graphics("img/CovidR-gallery-page-contribution-elements.png")
 ```
 </a>
 
+
 ---
 
-## Contributions: Submission & Integration
-
+## CovidR: Submission & Integration
 
 Contribution details [submitted as a YAML metadata file](https://milano-r.github.io/erum2020-covidr-contest/submit.html)
 
@@ -115,12 +119,12 @@ Contribution details [submitted as a YAML metadata file](https://milano-r.github
 --
 
 .inverse-60-40-right-column.no-first-top-margin[
-    
+
 - Collected in the **GitHub repo**<br/>[<span class="fa fa-github"></span> Milano-R / erum2020-covidr-contest](https://github.com/Milano-R/erum2020-covidr-contest)
 
   - Pull Requests / GitHub Issues
   - GitHub [_Community_](https://github.com/Milano-R/erum2020-covidr-contest/community) features (templates)
-  - See [CovidR Submission 101](https://youtu.be/pqrcxRL7AtU) video
+  - See [CovidR Submission 101 <span class="fa fa-youtube"></span>](https://youtu.be/pqrcxRL7AtU)
 
 ]
 
@@ -128,40 +132,41 @@ Contribution details [submitted as a YAML metadata file](https://milano-r.github
 
 .inverse-60-40-right-column[
 
-- Each new contribution integrated in the CovidR gallery website
-  
+- Each new contribution integrated in the **CovidR gallery** website
+
   - **R markdown** website (GitHub Pages)
-  - YAML -> Gallery page:<br/>
+  - YAML → Gallery page:<br/>
     new package **`{rmdgallery}`**
-  - **Badges**, **_likes_**
+  - **Badges**, **_Likes_**
   - Highly-**automated**:<br/>
-    CI/CD (& more) via **GitHub Actions**
-  
+    CI/CD via **GitHub Actions** (& more)
+
 ]
+
 
 ---
 
 ## `{rmdgallery}`: Rmd Gallery Site Generator
 
-- [<span class="fa fa-github"></span> riccardoporreca / rmdgallery](https://github.com/riccardoporreca/rmdgallery)
-  - 
-    ```r
-    remotes::install_github("riccardoporreca/rmdgallery")
-    ```
-  - pkgdown [riccardoporreca.github.io/rmdgallery](https://riccardoporreca.github.io/rmdgallery/), example usage [<span class="fa fa-github"></span> riccardoporreca / rmd-gallery-example](https://github.com/riccardoporreca/rmd-gallery-example#readme)
+[<span class="fa fa-github"></span> riccardoporreca / rmdgallery](https://github.com/riccardoporreca/rmdgallery) &ndash; [riccardoporreca.github.io/rmdgallery](https://riccardoporreca.github.io/rmdgallery/)
+
 - [`rmdgallery::gallery_site()`](https://riccardoporreca.github.io/rmdgallery/reference/gallery_site.html): Custom R Markdown [site generator](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html#custom-site-generators)
 
-  - Rendered as [_simple_ R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) via `rmarkdown::render_site()`
-  - Include  a gallery of (embedded) pages created from metadata in YAML (or JSON) format
+  - Renders a [_simple_ R Markdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) via `rmarkdown::render_site()`
+  - Including a gallery of pages generated from YAML / JSON metadata
+
+- Beyond CovidR, custom [gallery of online resources](https://mirai-solutions.ch/news/2020/03/27/covid-19-resource-gallery/)
+- Companion example repo / website [<span class="fa fa-github"></span> riccardoporreca / rmd-gallery-example](https://github.com/riccardoporreca/rmd-gallery-example#readme)
 
 --
 
 ### Inspiration
 
-- [hexb.in](http://hexb.in/): community-curated list of hexagon stickers (`.json` files on GitHub) &ndash; R.I.P. (?)
+- [hexb.in](http://hexb.in/): Community-curated list of hexagon stickers (`.json` files on GitHub) &ndash; R.I.P. (?)
 
-- [Jekyll](https://jekyllrb.com): simple, blog-aware, static site generator
+- [Jekyll](https://jekyllrb.com): Simple, blog-aware, static site generator
   - Markdown, Liquid template language, Collections, YAML (meta)data
+
 --
 
   - [Shiny app deployment and integration into a custom website gallery](https://user2019.r-project.org/static/pres/t258350.pdf), ToulouseR!2019 [<span class="fa fa-youtube"></span>](https://youtu.be/DizjPeNTeeo)
@@ -198,7 +203,7 @@ Individual metadata files .fontsize80[(`single_meta: true`)]
 ```
 ```yml
  `# meta/script-example.yml`
- `title`: Embed content via JavaScript`
+ `title`: Embed content via JavaScript
  `menu_entry`: Script example
  `template: embed-script`
  `content: "https://[..].js"`
@@ -208,7 +213,7 @@ Individual metadata files .fontsize80[(`single_meta: true`)]
 --
 
 .pull-right.no-first-top-margin[
-Collection metadata files .fontsize80[(`single_meta: false`)]
+Metadata collection files.fontsize80[(`single_meta: false`)]
 ```yml
  # meta/*.yml
  `html-example`:
@@ -238,93 +243,105 @@ Collection metadata files .fontsize80[(`single_meta: false`)]
 <div style="position: absolute; bottom: 160px; left: 345px; background-color: #fbff88; border: solid 5px #4b9dcb; border-radius: 10px; padding: 0 20px;">
 <div></div>
 
-Page metadata rendered<br>as HTML gallery page,<br/>linked as gallery menu entry
+Each metadata rendered<br>as HTML gallery page<br/>& gallery menu entry
 - `html-example.html`
 - `url-example.html`
 - `script-example.html`
 
 </div>
 
+
 ---
 
-## `{rmdgallery}`: Usage and configuration
+## `{rmdgallery}`: Usage and Configuration
 
+.pull-left.no-first-top-margin[
 
-.pull-left[
-
-Specify as R Markdown [`site:` generator](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html#custom-site-generators)
 
 ```yaml
 # index.(R)md
 title: "My Gallery Website"
 site: rmdgallery::gallery_site
 ```
-
-High degree of [Configuration & Customization](https://riccardoporreca.github.io/rmdgallery/#configuration-and-customization)
-
-Custom extra content before and after the main `content` via `include_before/_after`:<br/>HTML or R [`{htmltools}`](https://rstudio.github.io/htmltools) expression accessing metadata fields via `{{...}}`
-```html
-<hr>include_before for {{title}}<hr/>
-```
-```r
-{{htmltools::tagList(
-    htmltools::hr(),
-    "include_after for", title,
-    htmltools::hr()
-)}}
-```
-
-]
-
-
-.pull-right[
-
 ```yaml
 # _site.yml
 name: "my-website"
-navbar:
 # [...]
 *gallery:
+  type_field: `type`
+  type_template:
+    `shiny: embed-url`
+  # custom extra content
+  `include_before`: before_gallery.html
+  `include_after`: after_gallery.R
+  navbar:
+    left:
+    - text: `"Gallery"`
+      icon: `fa-folder-open`
   meta_dir: "meta"
   single_meta: false
   order_by: [title, desc(another_field)]
   template_dir: "custom/templates/path"
-  type_field: my_type
-  type_template:
-    gist: embed-script
-  defaults:
-    template: embed-url
-* navbar:
-*   left:
-*   - text: "Gallery"
-*     icon: fa-folder-open
-# optional 
-* include_before: _incl/before_gallery.html
-* include_after: _incl/after_gallery.R
+  defaults: [...]
 ```
+
+]
+
+.right-column-50.no-first-top-margin[
+
+Specify as R Markdown [`site:` generator](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html#custom-site-generators)
+
+High degree of [Configuration & Customization](https://riccardoporreca.github.io/rmdgallery/#configuration-and-customization)
+
+]
+
+--
+
+.right-column-50.no-first-top-margin[
+
+- Map custom `type` → `template`
+
+- Custom extra `include_before` / `_after` content
+
+  - Rendered above / below the main `content`
+  - HTML or R [`{htmltools}`](https://rstudio.github.io/htmltools) expressions `{{...}}` ([`{glue}`](https://glue.tidyverse.org/)), based on (custom) metadata
+
+```html
+ `<hr/>`
+   include_before for `{{title}}`
+ `<hr/>`
+```
+
+```r
+ `{{htmltools::tagList(`
+     htmltools::hr(),
+     "include_after for", `title`,
+     htmltools::hr()
+ `)}}`
+```
+
 ]
 
 
 --
 
 
-```{r eval=TRUE, echo=FALSE, fig.alt='An example of CovidR contribution gallery page, with highlighted {rmdgallery} page elements (gallery menu, include_before, content, include_after)', out.extra='class="img-covidr-website', out.extra='style="position: absolute; bottom: 20px; left: 75px; height: 550px;"'}
+```{r eval=TRUE, echo=FALSE, fig.alt='An example of CovidR contribution gallery page, with highlighted {rmdgallery} page elements (gallery menu, include_before, content, include_after)', out.extra='class="img-covidr-website', out.extra='style="position: absolute; bottom: 20px; right: 75px; height: 575px;"'}
 knitr::include_graphics("img/CovidR-gallery-page-rmdgallery-elements.png")
 ```
 
 
 ---
 
-## `{rmdgallery}`: Parsed Configuration / Metadata
+## `{rmdgallery}`: Parsed Metadata
 
 - [`rmdgallery::gallery_site_config()`](https://riccardoporreca.github.io/rmdgallery/reference/gallery_site_config.html)<br/>
   Configuration `list` (from `_site.yml`), **including parsed metadata** as `$gallery$meta`
-
-- The parsed metadata can be used to create arbitrary content in any standard `.Rmd` website page.
+- The parsed metadata can be used to **create arbitrary content** in any standard `.Rmd` website page
+--
 
 - Example: R code chunk creating an index / ToC for the gallery pages via [`{htmltools}`](https://rstudio.github.io/htmltools)<br>
   [<span class="fa fa-github"></span> `rmd-gallery-example/index.Rmd#L12-L26`](https://github.com/riccardoporreca/rmd-gallery-example/blob/1fdd41060b52a246a7c51d20c7bdbc00a49b521a/index.Rmd#L12-L26)
-
   ```r
     *meta <- rmdgallery::gallery_site_config()$gallery$meta
     htmltools::tags$ul(
@@ -333,27 +350,27 @@ knitr::include_graphics("img/CovidR-gallery-page-rmdgallery-elements.png")
         with(`meta[[name]]`, {
           htmltools::tags$li(
             htmltools::a(href = href, `title`),
-            "by", `author`, 
+            "by", `author`,
             htmltools::a(href = `url`, target = "_blank", "[source]")
           )
         })
       })
     )
 ```
+
 --
 
 - Next level: [CovidR homepage](https://milano-r.github.io/erum2020-covidr-contest/index.html)  (index by contest result, collapsibles, modals, ...) via [`{htmltools}`](https://rstudio.github.io/htmltools) + [`{bsplus}`](http://ijlyttle.github.io/bsplus)<br/>
   [<span class="fa fa-github"></span> `erum2020-covidr-contest/contest/index.Rmd`](https://github.com/Milano-R/erum2020-covidr-contest/blob/master/contest/index.Rmd)
 
----
-
-## `{rmdgallery}`: Parsed Configuration / Metadata
+--
 
 <a href="https://milano-r.github.io/erum2020-covidr-contest">
-```{r eval=TRUE, echo=FALSE, fig.alt='List of contributions in the CovidR home page', out.extra='class="img-covidr-website"'}
+```{r eval=TRUE, echo=FALSE, fig.alt='List of contributions in the CovidR home page', out.extra='class="img-covidr-website" style="height: 470px; border-right: solid 220px white;"'}
 knitr::include_graphics("img/CovidR-home-contributions.png")
 ```
 </a>
+
 
 ---
 
@@ -365,42 +382,44 @@ knitr::include_graphics("img/CovidR-home-contributions.png")
 ![eRum2020::CovidR Winner badge](img/CovidR-badge-winner.svg)
 
 .pull-left[
+![The contribution badge as shown in the CovidR gallery](img/CovidR-gallery-badge.png)<br/>
+.fontsize80[`bsplus::bs_modal()` + `bsplus::bs_attach_modal()`]<br/>
+.fontsize80[[`contest/_includes/before_gallery.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_includes/before_gallery.R#L20-L41)]
 
-- Fast [badgen.net](https://badgen.net) service
-
-- Based on an [HTTPS endpoint](https://badgen.net/https) implemented in [RunKit](https://runkit.com/home#endpoint)
-
-  - Simple Node.js API:
-    <br/>[`runkit.com/erum2020-covidr/badge`](https://runkit.com/erum2020-covidr/badge)
-  - Built around a live status `.yml` file
-  
-      - [`badge-endpoint.yml`](https://milano-r.github.io/erum2020-covidr-contest/badge-endpoint.yml)
-      - generated with R & deployed as part of the CovidR gallery website builds
-      - underlying status information updated with PRs
-
-  - .fontsize80[
-  [`https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/{{page_name}}`](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/{{page_name}})
-  ]
-
+[![The modal window showing the markdown / HTML code for including a contribution badge](img/CovidR-modal-badge-include-code.png)](https://milano-r.github.io/erum2020-covidr-contest/author-contribution-example.html)
 ]
 
 --
 
 .pull-right[
-![The contribution badge as shown in the CovidR gallery](img/CovidR-gallery-badge.png)<br/>
-.fontsize80[`bsplus::bs_modal()` + `bsplus::bs_attach_modal()`]<br/>
-.fontsize80[[`contest/_includes/before_gallery.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_includes/before_gallery.R#L20-L41)]
 
-![The modal window showing the markdown / HTML code for including a contribution badge](img/CovidR-modal-badge-include-code.png)
+- [badgen.net](https://badgen.net) generator service
+
+- Render dynamic badges using an API<br/>[HTTPS endpoint](https://badgen.net/https)
+
+- Based on a live status `.yml` file
+
+    - [`badge-endpoint.yml`](https://milano-r.github.io/erum2020-covidr-contest/badge-endpoint.yml)
+    - generated in R with current status information
+    - updated and deployed as part of the CovidR gallery website builds
+
+- Simple Node.js instant API in [RunKit](https://runkit.com/home#endpoint)
+
+  - [`runkit.com/erum2020-covidr/badge`](https://runkit.com/erum2020-covidr/badge)
+
+- .fontsize80[
+  [`https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/{{page_name}}`](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/{{page_name}})
+  ]
+
 ]
 
----
 
+---
 
 ## CovidR: Community _Likes_ <span class="fa fa-thumbs-up"><span>
 
 .center[
-Engage the community by letting visitors vote for contributions they like
+**Engage the community** by letting visitors **vote for contributions** they like
 ]
 
 .pull-left[
@@ -408,37 +427,38 @@ Engage the community by letting visitors vote for contributions they like
 ![The contribution "Like" button as shown in the contribution list on the CovidR homepage](img/CovidR-home-like.png)<br/>
 .fontsize80[`bsplus::bs_modal()` + `bsplus::bs_attach_modal()`]
 
-![The modal window allowing to vote for a contribution by leaving a "Like"](img/CovidR-modal-like.png)
+[![The modal window allowing to vote for a contribution by leaving a "Like"](img/CovidR-modal-like.png)](https://milano-r.github.io/erum2020-covidr-contest/mingione-nowcasting.html)
 ]
 
 --
 
 .pull-right[
 
-🔮 **Utterances** ([utteranc.es](https://utteranc.es/))
+🔮 **Utterances** ([utteranc.es](https://utteranc.es/)) [[Maëlle's R blog](https://masalmon.eu/2019/10/02/disqus/)]
 
 - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages **and more**!
-  
-- Peculiar usage: 👍 Reactions on a pre-defined comment
 
-  - .fontsize80[[`contest/_tools/vote-modal.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/vote-modal.R)]
+- Peculiar usage: 👍 Reactions on a pre-defined comment
 
   - .fontsize80[[`contest/_includes/before_gallery.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_includes/before_gallery.R#L66-L68)]
 
   - .fontsize80[[`contest/index.Rmd`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/index.Rmd#L72-L84)]
 
+  - .fontsize80[[`contest/_tools/vote-modal.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/vote-modal.R)]
+
   - .fontsize80[([`contest/_tools/utterances-issues.R`]( https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/utterances-issues.R))]
 
 ]
+
 
 ---
 
 ## CovidR: "Automation!" (3x)
 
-<div style="position: absolute; top:40px; right: 250px;">
+<div style="position: absolute; top: 35px; right: 70px;">
 <div></div>
 
-[[e-Rum2020 CI/CD workshop](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
+[[e-Rum2020 workshop - GitHub, CI/CD, GitFlow, ...](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
 
 </div>
 
@@ -448,20 +468,18 @@ Engage the community by letting visitors vote for contributions they like
 **Streamlined** submission and integration
 
 - Pull Requests / GitHub Issues
-  
-- GitHub [_Community_](https://github.com/Milano-R/erum2020-covidr-contest/community) features (templates)
 
+- GitHub [_Community profile_](https://github.com/Milano-R/erum2020-covidr-contest/community)
 
 **D**on't **R**epeat **Y**ourself<br/>
 (let R **W**rite **E**verything **T**wice for you)
 
+- Repeated content: README, YAML example, Issue / PR templates, CoC, Contributing, Website info / submission page, ...
+
 - Centralize content definition
 
-  - README, YAML example, Issue / PR templates, CoC, Contributing, ...
-  - Website info / submission page
-      
 - R puts everything together when rendering `.Rmd`s
-  
+
   - [`README.Rmd`]() + [`.git/hooks/pre-commit`]()
   - [`contest/about.Rmd`]()
   - [`contest/submit.Rmd`]()
@@ -471,43 +489,44 @@ Engage the community by letting visitors vote for contributions they like
 
 
 .pull-right[
-![The GiHub community insigths page for the CovidR repository](img/CovidR-repo-insights-community.png)
+[![The GiHub Community profile for the CovidR repository](img/CovidR-repo-insights-community.png)](https://github.com/Milano-R/erum2020-covidr-contest/community)
 ]
-  
+
 
 ---
 
 ## CovidR: "Automation!" (3x)
-<div style="position: absolute; top:40px; right: 250px;">
+
+<div style="position: absolute; top: 35px; right: 70px;">
 <div></div>
 
-[[e-Rum2020 CI/CD workshop](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
+[[e-Rum2020 workshop - GitHub, CI/CD, GitFlow, ...](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
 
 </div>
 
 **CI/CD via GitHub Actions** [`.github/workflows/site.yaml`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/.github/workflows/site.yaml)
 
 .pull-left.no-first-top-margin[
-  
+
 - Executed upon every push & pull requests (esp. with new contributions)
 
   - Ensures the gallery site can be built
-  - Built site as artifact to preview the contribution integration in the gallery (w/o local checkout)
-  
-]
-
-.pull-right.no-first-top-margin[
+  - Produce an artifact to preview the contribution integrated in the gallery (w/o local checkout)
 
 - Updated live website deployed from `main` (`master`)
 
-- If no existing **utterances issue** is found, create one with the default standard comment
+]
+
+--
+
+.pull-right.no-first-top-margin[
+
+- If no existing **utterances issue** is found, create one with the standard comment
 
   - [`contest/_tools/utterances-issues.R`]( https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/utterances-issues.R)
   - GitHub API: [`{gh}`](https://gh.r-lib.org/)
 
-]      
-
---
+]
 
 .right-column-75.no-first-top-margin[
 ```yml
@@ -526,14 +545,15 @@ Engage the community by letting visitors vote for contributions they like
 ```
 ]
 
+
 ---
 
 ## CovidR: "Automation!" (3x)
 
-<div style="position: absolute; top:40px; right: 250px;">
+<div style="position: absolute; top: 35px; right: 70px;">
 <div></div>
 
-[[e-Rum2020 CI/CD workshop](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
+[[e-Rum2020 workshop - GitHub, CI/CD, GitFlow, ...](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
 
 </div>
 
@@ -550,13 +570,15 @@ Contest evolution updates live in a [**matter of a Pull Request**](https://githu
 
 ]
 
+
 ---
 
 ## CovidR: "Automation!" (3x)
-<div style="position: absolute; top:40px; right: 250px;">
+
+<div style="position: absolute; top: 35px; right: 70px;">
 <div></div>
 
-[[e-Rum2020 CI/CD workshop](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
+[[e-Rum2020 workshop - GitHub, CI/CD, GitFlow, ...](https://mirai-solutions.ch/news/2020/08/25/erum2020-workshop/)]
 
 </div>
 
@@ -569,7 +591,7 @@ Contest evolution updates live in a [**matter of a Pull Request**](https://githu
 **Lock voting issues and extract votes**<br/>
 .fontsize80[[`.github/workflows/utterances-lock-votes.yaml`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/.github/workflows/utterances-lock-votes.yaml)]
 
-  - [`contest/_tools/utterances-issues.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/utterances-issues.R#L237-L262)
+  - [`contest/_tools/utterances-issues.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/utterances-issues.R#L237-L262)<br/>
     ```r
      `votes <- lock_utterances_issues`(
        owner = "Milano-R",
@@ -579,22 +601,23 @@ Contest evolution updates live in a [**matter of a Pull Request**](https://githu
     ```
   - Manual trigger from R
     ```r
-     gh::gh(
+     `gh::gh`(
        "POST /repos/:owner/:repo/dispatches",
        owner = "Milano-R",
        repo = "erum2020-covidr-contest",
-       event_type = "lock-utterances-votes"
+       `event_type = "lock-utterances-votes"`
      )
     ```
 ]
 
+--
 
 .pull-right.no-first-top-margin[
 
 **Cleanup comments to voting issues**<br/>
 .fontsize80[[`.github/workflows/utterances-cleanup.yaml`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/.github/workflows/utterances-cleanup.yaml)]
 
-  - Polite approach: Collect all users who commented and notify, delete comments for already-notified users
+  - Polite approach: Detect and notify all users who commented, delete comments for already-notified users
   - [`contest/_tools/utterances-issues.R`](https://github.com/Milano-R/erum2020-covidr-contest/blob/a13b0ee2b2eec57bc523c7d6e50734863e35a9d8/contest/_tools/utterances-issues.R#L142-L234)
     ```r
      `cleanup_utterances_comments`(
